@@ -1,3 +1,19 @@
 body {
     background-color: #282c34;
 }
+
+.Board {
+    display: grid;
+
+    margin: auto;
+}
+
+.btn {
+    border-radius: 50%;
+    background-color: #e9d5ca;
+    width: 7em;
+    height: 7em;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}
