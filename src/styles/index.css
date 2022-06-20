@@ -3,17 +3,38 @@ body {
 }
 
 .Board {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 15em;
+}
 
-    margin: auto;
+.container {
+    display: grid;
+    grid-template-columns: 7em 7em 7em 7em;
+    grid-template-rows: 7em 7em 7em 7em 7em;
+    gap: 1em;
 }
 
 .btn {
-    border-radius: 50%;
-    background-color: #e9d5ca;
+    position: relative;
+    border-radius: 35%;
     width: 7em;
     height: 7em;
     font-size: 1em;
     font-weight: bold;
     color: black;
+}
+
+.number {
+    background-color: #00adb5;
+}
+
+.option {
+    background-color: #eeeeee;
+}
+
+.operator {
+    background-color: #393e46;
+    color: white;
 }
