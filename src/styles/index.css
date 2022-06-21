@@ -1,19 +1,20 @@
 body {
     background-color: #282c34;
+    font-family: "Open Sans", sans-serif;
 }
 
 .Board {
     display: flex;
     justify-content: center;
     align-items: baseline;
-    margin-top: 15em;
+    margin-top: 17em;
 }
 
 .container {
     display: grid;
     grid-template-columns: 7em 7em 7em 7em;
     grid-template-rows: 7em 7em 7em 7em 7em;
-    gap: 1em;
+    gap: 0.5em;
 }
 
 .btn {
@@ -37,4 +38,23 @@ body {
 .operator {
     background-color: #393e46;
     color: white;
+}
+
+.screen {
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 8em;
+    height: 4em;
+}
+
+.text-screen {
+    font-size: 3em;
+}
+
+.btn-size {
+    font-size: 2.5em;
+    font-family: "Open Sans", sans-serif;
 }

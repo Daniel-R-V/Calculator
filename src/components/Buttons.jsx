@@ -1,27 +1,63 @@
 const Buttons = () => {
     return (
         <div className="container">
-            <button className="btn option">AC</button>
-            <button className="btn option">+/-</button>
-            <button className="btn option">%</button>
-            <button className="btn operator">/</button>
-            <button className="btn number">7</button>
-            <button className="btn number">8</button>
-            <button className="btn number">9</button>
-            <button className="btn operator">X</button>
-            <button className="btn number">4</button>
-            <button className="btn number">5</button>
-            <button className="btn number">6</button>
-            <button className="btn operator">-</button>
-            <button className="btn number">1</button>
-            <button className="btn number">2</button>
-            <button className="btn number">3</button>
-            <button className="btn operator">+</button>
-            <button id="btn-0" className="btn number">
-                0
+            <button className="btn option">
+                <div className="btn-size">AC</div>
             </button>
-            <button className="btn number">,</button>
-            <button className="btn operator">=</button>
+            <button className="btn option">
+                <div className="btn-size">+/-</div>
+            </button>
+            <button className="btn option">
+                <div className="btn-size">%</div>
+            </button>
+            <button className="btn operator">
+                <div className="btn-size">/</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">7</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">8</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">9</div>
+            </button>
+            <button className="btn operator">
+                <div className="btn-size">x</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">4</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">5</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">6</div>
+            </button>
+            <button className="btn operator">
+                <div className="btn-size">-</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">1</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">2</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">3</div>
+            </button>
+            <button className="btn operator">
+                <div className="btn-size">+</div>
+            </button>
+            <button id="btn-0" className="btn number">
+                <div className="btn-size">0</div>
+            </button>
+            <button className="btn number">
+                <div className="btn-size">,</div>
+            </button>
+            <button className="btn operator">
+                <div className="btn-size">=</div>
+            </button>
         </div>
     );
 };
