@@ -3,10 +3,12 @@ import ScreenCalculator from "./ScreenCalculator";
 
 const Board = () => {
     return (
-        <section className="Board">
-            <ScreenCalculator />
-            <Pad />
-        </section>
+        <div className="Board">
+            <section className="Board-section">
+                <ScreenCalculator />
+                <Pad />
+            </section>
+        </div>
     );
 };
 

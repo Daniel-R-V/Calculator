@@ -6,8 +6,14 @@ body {
 .Board {
     display: flex;
     justify-content: center;
-    align-items: baseline;
-    margin-top: 17em;
+}
+
+.Board-section {
+    position: relative;
+    margin-top: 2em;
+    background-color: #51557e;
+    padding: 3em;
+    border-radius: 3em;
 }
 
 .container {
@@ -15,7 +21,6 @@ body {
     grid-template-columns: 7em 7em 7em 7em;
     grid-template-rows: 7em 7em 7em 7em 7em;
     gap: 0.5em;
-    position: absolute;
 }
 
 .btn {
@@ -24,8 +29,8 @@ body {
     height: 7em;
     font-size: 1em;
     font-weight: bold;
-    color: black;
     border: none;
+    color: black;
     cursor: pointer;
 }
 
@@ -43,18 +48,34 @@ body {
 }
 
 .screen {
-    background-color: grey;
-    height: 6em;
-    width: 25em;
+    background-color: black;
+    height: 7.5em;
+    width: 29.5em;
+    margin-bottom: 1.5em;
+    border-radius: 20px;
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
+    justify-content: center;
 }
 .text-screen {
-    font-size: 3em;
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    font-size: 4em;
+    margin: auto;
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .btn-size {
     font-size: 2.6em;
     font-family: "Open Sans", sans-serif;
+}
+
+.casio-dani {
+    color: #e9dac1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-family: "Orbitron", sans-serif;
 }

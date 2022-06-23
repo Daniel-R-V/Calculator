@@ -1,8 +1,11 @@
 const ScreenCalculator = () => {
     return (
-        <div className="screen">
-            <p className="text-screen">0</p>
-        </div>
+        <>
+            <div className="casio-dani">CASIO-DANI</div>
+            <div className="screen">
+                <p className="text-screen">0</p>
+            </div>
+        </>
     );
 };
 
