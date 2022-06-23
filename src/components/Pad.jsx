@@ -1,4 +1,4 @@
-const Buttons = () => {
+const Pad = () => {
     return (
         <div className="container">
             <button className="btn option">
@@ -62,4 +62,4 @@ const Buttons = () => {
     );
 };
 
-export default Buttons;
+export default Pad;

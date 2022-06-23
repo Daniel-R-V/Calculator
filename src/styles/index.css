@@ -15,16 +15,18 @@ body {
     grid-template-columns: 7em 7em 7em 7em;
     grid-template-rows: 7em 7em 7em 7em 7em;
     gap: 0.5em;
+    position: absolute;
 }
 
 .btn {
-    position: relative;
     border-radius: 35%;
     width: 7em;
     height: 7em;
     font-size: 1em;
     font-weight: bold;
     color: black;
+    border: none;
+    cursor: pointer;
 }
 
 .number {
@@ -42,14 +44,12 @@ body {
 
 .screen {
     background-color: grey;
+    height: 6em;
+    width: 25em;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 8em;
-    height: 4em;
+    /* flex-direction: column; */
+    /* justify-content: center; */
 }
-
 .text-screen {
     font-size: 3em;
 }
