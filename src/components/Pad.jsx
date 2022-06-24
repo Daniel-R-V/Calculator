@@ -46,7 +46,7 @@ const Pad = () => {
             <button className="btn number">
                 <div className="btn-size">3</div>
             </button>
-            <button className="btn operator">
+            <button className="btn operator btn-plus">
                 <div className="btn-size">+</div>
             </button>
             <button id="btn-0" className="btn number">
@@ -55,7 +55,7 @@ const Pad = () => {
             <button className="btn number">
                 <div className="btn-size">,</div>
             </button>
-            <button className="btn operator">
+            <button className="btn number">
                 <div className="btn-size">=</div>
             </button>
         </div>

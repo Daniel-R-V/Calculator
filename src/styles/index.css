@@ -10,10 +10,11 @@ body {
 
 .Board-section {
     position: relative;
-    margin-top: 2em;
-    background-color: #51557e;
+    margin-top: 1em;
+    background-color: #2f5d62;
     padding: 3em;
-    border-radius: 3em;
+    border-radius: 2.8em;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.25), inset 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 .container {
@@ -24,41 +25,50 @@ body {
 }
 
 .btn {
-    border-radius: 35%;
+    /* border-radius: 35%; */
     width: 7em;
     height: 7em;
     font-size: 1em;
     font-weight: bold;
-    border: none;
+    border: 2px solid #3f3f3f;
     color: black;
+    cursor: pointer;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: 0.13s ease-in-out;
     cursor: pointer;
 }
 
 .number {
-    background-color: #00adb5;
-}
-
-.option {
-    background-color: #eeeeee;
-}
-
-.operator {
-    background-color: #393e46;
+    background-color: #1b2430;
     color: white;
 }
 
+.option {
+    background-color: #1b2430;
+    color: #3ec70b;
+}
+
+.operator {
+    background-color: #1b2430;
+    color: #f55353;
+}
+
 .screen {
-    background-color: black;
-    height: 7.5em;
+    background-color: #c7d36f;
+    height: 9em;
     width: 29.5em;
     margin-bottom: 1.5em;
     border-radius: 20px;
     display: flex;
     justify-content: center;
+    border: 3px solid;
+    border-color: rgb(36, 36, 36);
 }
 .text-screen {
     font-family: "Orbitron", sans-serif;
-    color: white;
+    color: #191919;
     font-size: 4em;
     margin: auto;
     margin-right: 0.5em;
@@ -67,15 +77,21 @@ body {
 }
 
 .btn-size {
-    font-size: 2.6em;
-    font-family: "Open Sans", sans-serif;
+    font-size: 2.3em;
 }
 
 .casio-dani {
-    color: #e9dac1;
+    color: #f0a500;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 1em;
     font-family: "Orbitron", sans-serif;
+}
+
+.btn-plus {
+    background-color: #f55353;
+    color: white;
+    height: 14.5em;
+    border: 2px solid #3f3f3f;
 }
