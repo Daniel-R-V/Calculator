@@ -94,3 +94,11 @@ body {
     height: 14.5em;
     border: 2px solid #3f3f3f;
 }
+
+.btn:hover {
+    background-color: #1b243098;
+}
+
+.btn-plus:hover {
+    background-color: #f55353c9;
+}

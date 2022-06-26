@@ -1,7 +1,7 @@
 const Pad = () => {
     return (
         <div className="container">
-            <button className="btn option">
+            <button className="btn option" onClick={() => BtnPressed()}>
                 <div className="btn-size">AC</div>
             </button>
             <button className="btn option">
@@ -61,5 +61,11 @@ const Pad = () => {
         </div>
     );
 };
+
+
+const BtnPressed = () => {
+    console.log('btn AC pressed!');
+
+}
 
 export default Pad;
