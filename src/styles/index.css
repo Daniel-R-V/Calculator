@@ -3,6 +3,8 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+/* TODO: AGREGAR ESTILOS A BOARD Y BOARD SECTION YA QUE VOY A ELIMINAR EL COMPONENTE BOARD*/
+
 .Board {
     display: flex;
     justify-content: center;

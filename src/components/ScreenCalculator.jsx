@@ -1,3 +1,5 @@
+import {BtnPressed} from './Pad'
+
 const ScreenCalculator = () => {
     return (
         <>
