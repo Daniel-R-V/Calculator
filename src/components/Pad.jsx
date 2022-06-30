@@ -1,7 +1,16 @@
+import { useState } from "react";
+
 const Pad = () => {
+    const [value, setValue] = useState(0)
     return (
+    <>
+        <div className="casio-dani">CASIO</div>
+        <div className="screen">
+            <p className="text-screen">{value}</p>
+        </div>
+
         <div className="container">
-            <button onClick={() => display} className="btn option">
+            <button onClick={(e) => setValue(e.target.value)} className="btn option">
                 <div className="btn-size">AC</div>
             </button>
             <button className="btn option">
@@ -59,14 +68,16 @@ const Pad = () => {
                 <div className="btn-size">=</div>
             </button>
         </div>
+
+    </>    
     );
 
 
-    function display(e) {
-        return (
-            <p>{e.target.value}</p>
-        )
-    }
+    // function display() {
+    //     return (
+            
+    //     )
+    // }
 
 
 

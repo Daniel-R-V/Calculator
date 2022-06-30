@@ -1,15 +1,11 @@
-import { useState } from "react";
-import Pad from "./components/Pad";
+
+import Board from "./components/Board";
 
 function App() {
-    const [value, setValue] = useState(0)
 
     return (
         <div className="App">
-            {/* <ScreenCalculator/>  */}
-            {/* <Board /> */}
-            <Pad/>
-            
+            <Board />
         </div>
     );
 }
