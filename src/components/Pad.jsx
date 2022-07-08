@@ -10,62 +10,62 @@ const Pad = () => {
         </div>
 
         <div className="container">
-            <button onClick={(e) => setValue(e.target.value)} className="btn option">
-                <div className="btn-size">AC</div>
+            <button className="btn option" onClick={(e) => this.setValue(e.currentTarget.value)} >
+                AC
+            </button>
+            <button className="btn option" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                +/-
             </button>
             <button className="btn option">
-                <div className="btn-size">+/-</div>
-            </button>
-            <button className="btn option">
-                <div className="btn-size">%</div>
+                %
             </button>
             <button className="btn operator">
-                <div className="btn-size">/</div>
+                /
             </button>
             <button className="btn number">
-                <div className="btn-size">7</div>
+                7
             </button>
-            <button className="btn number">
-                <div className="btn-size">8</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                8
             </button>
-            <button className="btn number">
-                <div className="btn-size">9</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                9
             </button>
             <button className="btn operator">
-                <div className="btn-size">x</div>
+                x
             </button>
-            <button className="btn number">
-                <div className="btn-size">4</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                4
             </button>
-            <button className="btn number">
-                <div className="btn-size">5</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                5
             </button>
-            <button className="btn number">
-                <div className="btn-size">6</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                6
             </button>
             <button className="btn operator">
-                <div className="btn-size">-</div>
+                -
             </button>
-            <button className="btn number">
-                <div className="btn-size">1</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                1
             </button>
-            <button className="btn number">
-                <div className="btn-size">2</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                2
             </button>
-            <button className="btn number">
-                <div className="btn-size">3</div>
+            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                3
             </button>
             <button className="btn operator btn-plus">
-                <div className="btn-size">+</div>
+                +
             </button>
-            <button id="btn-0" className="btn number">
-                <div className="btn-size">0</div>
-            </button>
-            <button className="btn number">
-                <div className="btn-size">,</div>
+            <button id="btn-0" className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+                0
             </button>
             <button className="btn number">
-                <div className="btn-size">=</div>
+                ,
+            </button>
+            <button className="btn number">
+                =
             </button>
         </div>
 
