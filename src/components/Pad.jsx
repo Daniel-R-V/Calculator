@@ -1,70 +1,77 @@
 import { useState } from "react";
 
 const Pad = () => {
-    const [value, setValue] = useState(0)
+    const [display, setDisplay] = useState(0)
+
+    const selectNumber = (e) => {
+        e.preventDefailt();
+        setDisplay(e.target.value);
+    }
+
+
     return (
     <>
         <div className="casio-dani">CASIO</div>
         <div className="screen">
-            <p className="text-screen">{value}</p>
+            <p className="text-screen">{display}</p>
         </div>
 
         <div className="container">
-            <button className="btn option" onClick={(e) => this.setValue(e.currentTarget.value)} >
+            <button className="btn option" value='AC' onClick={() => selectNumber} >
                 AC
             </button>
-            <button className="btn option" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn option" value='+/-' onClick={() => selectNumber} >
                 +/-
             </button>
-            <button className="btn option">
+            <button className="btn option" value='%' onClick={() => selectNumber} >
                 %
             </button>
-            <button className="btn operator">
+            <button className="btn operator" value='/' onClick={() => selectNumber} >
                 /
             </button>
-            <button className="btn number">
+            <button className="btn number" value='7' onClick={() => selectNumber} >
                 7
             </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='8' onClick={() => selectNumber} >
                 8
             </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='9' onClick={() => selectNumber} >
                 9
             </button>
-            <button className="btn operator">
+            <button className="btn operator" value='x' onClick={() => selectNumber} >
                 x
             </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='4' onClick={() => selectNumber} >
                 4
             </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='5' onClick={() => selectNumber} >
                 5
             </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='6' onClick={() => selectNumber} >
                 6
             </button>
-            <button className="btn operator">
+            <button className="btn operator" value='-' onClick={() => selectNumber}>
                 -
             </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='1' onClick={() => selectNumber} >
                 1
             </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='2' onClick={() => selectNumber} >
                 2
-            </button>
-            <button className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            </button> 
+            <button className="btn number" value='3' onClick={() => selectNumber} >
                 3
             </button>
-            <button className="btn operator btn-plus">
+            <button className="btn operator btn-plus" value='+' onClick={() => selectNumber}>
                 +
             </button>
-            <button id="btn-0" className="btn number" onClick={(e) => this.setValue(e.currentTarget.value)}>
+            <button className="btn number" value='0' onClick={() => selectNumber} >
                 0
             </button>
-            <button className="btn number">
+            <button className="btn number" value=',' onClick={() => selectNumber} >
                 ,
             </button>
-            <button className="btn number">
+            <button className="btn number" value='=' onClick={() => selectNumber} >
                 =
             </button>
         </div>
