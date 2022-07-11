@@ -56,6 +56,11 @@ body {
     color: #f55353;
 }
 
+.operator:focus {
+    background-color: white;
+    color: #f55353;
+}
+
 .screen {
     background-color: #c7d36f;
     height: 9em;
@@ -103,4 +108,10 @@ body {
 
 .btn-plus:hover {
     background-color: #f55353c9;
+}
+
+
+.btn-plus:focus{
+    background-color: white;
+    color: red;
 }
