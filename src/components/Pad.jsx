@@ -23,63 +23,101 @@ const Pad = () => {
         </div>
 
         <div className="container">
-            <button className="btn option" value='AC' onClick={removeValue} >
+            <div className="btn option">
+            <button className="text" value='AC' onClick={removeValue} >
                 AC
             </button>
-            <button className="btn option" value='+/-' >
+            </div>
+            <div className="btn option">
+            <button className="text" value='+/-' >
                 +/-
             </button>
-            <button className="btn option" value='%'>
+            </div>
+            <div className="btn option">
+            <button className="text" value='%'>
                 %
             </button>
-            <button className="btn operator" value='/'>
+            </div>
+            <div className="btn operator">
+            <button className="text" value='/'>
                 /
             </button>
-            <button className="btn number" value='7' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='7' onClick={selectNumber} >
                 7
             </button>
-            <button className="btn number" value='8' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='8' onClick={selectNumber} >
                 8
             </button>
-            <button className="btn number" value='9' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='9' onClick={selectNumber} >
                 9
             </button>
-            <button className="btn operator">
+            </div>
+            <div className="btn operator">
+            <button className="text">
                 x
             </button>
-            <button className="btn number" value='4' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='4' onClick={selectNumber} >
                 4
             </button>
-            <button className="btn number" value='5' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='5' onClick={selectNumber} >
                 5
             </button>
-            <button className="btn number" value='6' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='6' onClick={selectNumber} >
                 6
             </button>
-            <button className="btn operator" value='-'>
+            </div>
+            <div className="btn operator">
+            <button className="text" value='-'>
                 -
             </button>
-            <button className="btn number" value='1' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='1' onClick={selectNumber} >
                 1
             </button>
-            <button className="btn number" value='2' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='2' onClick={selectNumber} >
                 2
             </button> 
-            <button className="btn number" value='3' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='3' onClick={selectNumber} >
                 3
             </button>
-            <button className="btn operator btn-plus" value='+'>
+            </div>
+            <div className="btn operator btn-plus">
+            <button className="text-plus" value='+'>
                 +
             </button>
-            <button className="btn number" value='0' onClick={selectNumber} >
+            </div>
+            <div className="btn number">
+            <button className="text" value='0' onClick={selectNumber} >
                 0
             </button>
-            <button className="btn number" value=',' onClick={selectNumber} >
+            </div>
+            <div className="btn number"> 
+            <button className="text" value=',' onClick={selectNumber} >
                 ,
             </button>
-            <button className="btn number" value='='>
+            </div>
+            <div className="btn number">
+            <button className="text" value='='>
                 =
             </button>
+            </div>
         </div>
 
     </>    

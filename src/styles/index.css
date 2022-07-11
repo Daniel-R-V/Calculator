@@ -27,7 +27,6 @@ body {
 }
 
 .btn {
-    /* border-radius: 35%; */
     width: 7em;
     height: 7em;
     font-size: 1em;
@@ -39,6 +38,11 @@ body {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25);
     transition: 0.13s ease-in-out;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .number {
@@ -102,6 +106,8 @@ body {
     border: 2px solid #3f3f3f;
 }
 
+
+
 .btn:hover {
     background-color: #1b243098;
 }
@@ -115,3 +121,44 @@ body {
     background-color: white;
     color: red;
 }
+
+.text{
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    width: 3.5em;
+    height: 3.5em;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.text:hover{
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+
+.text-plus{
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 34px;
+    cursor: pointer;
+    height: 7.3em;
+    width: 3.5em;
+
+}
+
+.text-plus:focus{
+    background-color: white;
+    color: #f55353c9;
+
+}
+
+
