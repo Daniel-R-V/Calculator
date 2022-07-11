@@ -4,10 +4,12 @@ const Pad = () => {
     const [display, setDisplay] = useState(0);
 
     const selectNumber = (e) => {
+        e.preventDefault();
         setDisplay(e.target.value);
     };
 
     const removeValue = (e) => {
+        e.preventDefault();
         let clear = 0;
         setDisplay(clear);
     } 
