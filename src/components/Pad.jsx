@@ -1,12 +1,16 @@
 import { useState } from "react";
 
 const Pad = () => {
-    const [display, setDisplay] = useState(0)
+    const [display, setDisplay] = useState(0);
 
     const selectNumber = (e) => {
-        e.preventDefailt();
         setDisplay(e.target.value);
-    }
+    };
+
+    const removeValue = (e) => {
+        let clear = 0;
+        setDisplay(clear);
+    } 
 
 
     return (
@@ -17,61 +21,61 @@ const Pad = () => {
         </div>
 
         <div className="container">
-            <button className="btn option" value='AC' onClick={() => selectNumber} >
+            <button className="btn option" value='AC' onClick={removeValue} >
                 AC
             </button>
-            <button className="btn option" value='+/-' onClick={() => selectNumber} >
+            <button className="btn option" value='+/-' onClick={selectNumber} >
                 +/-
             </button>
-            <button className="btn option" value='%' onClick={() => selectNumber} >
+            <button className="btn option" value='%' onClick={selectNumber} >
                 %
             </button>
-            <button className="btn operator" value='/' onClick={() => selectNumber} >
+            <button className="btn operator" value='/' onClick={selectNumber} >
                 /
             </button>
-            <button className="btn number" value='7' onClick={() => selectNumber} >
+            <button className="btn number" value='7' onClick={selectNumber} >
                 7
             </button>
-            <button className="btn number" value='8' onClick={() => selectNumber} >
+            <button className="btn number" value='8' onClick={selectNumber} >
                 8
             </button>
-            <button className="btn number" value='9' onClick={() => selectNumber} >
+            <button className="btn number" value='9' onClick={selectNumber} >
                 9
             </button>
-            <button className="btn operator" value='x' onClick={() => selectNumber} >
+            <button className="btn operator" value='x' onClick={selectNumber} >
                 x
             </button>
-            <button className="btn number" value='4' onClick={() => selectNumber} >
+            <button className="btn number" value='4' onClick={selectNumber} >
                 4
             </button>
-            <button className="btn number" value='5' onClick={() => selectNumber} >
+            <button className="btn number" value='5' onClick={selectNumber} >
                 5
             </button>
-            <button className="btn number" value='6' onClick={() => selectNumber} >
+            <button className="btn number" value='6' onClick={selectNumber} >
                 6
             </button>
-            <button className="btn operator" value='-' onClick={() => selectNumber}>
+            <button className="btn operator" value='-' onClick={selectNumber}>
                 -
             </button>
-            <button className="btn number" value='1' onClick={() => selectNumber} >
+            <button className="btn number" value='1' onClick={selectNumber} >
                 1
             </button>
-            <button className="btn number" value='2' onClick={() => selectNumber} >
+            <button className="btn number" value='2' onClick={selectNumber} >
                 2
             </button> 
-            <button className="btn number" value='3' onClick={() => selectNumber} >
+            <button className="btn number" value='3' onClick={selectNumber} >
                 3
             </button>
-            <button className="btn operator btn-plus" value='+' onClick={() => selectNumber}>
+            <button className="btn operator btn-plus" value='+' onClick={selectNumber}>
                 +
             </button>
-            <button className="btn number" value='0' onClick={() => selectNumber} >
+            <button className="btn number" value='0' onClick={selectNumber} >
                 0
             </button>
-            <button className="btn number" value=',' onClick={() => selectNumber} >
+            <button className="btn number" value=',' onClick={selectNumber} >
                 ,
             </button>
-            <button className="btn number" value='=' onClick={() => selectNumber} >
+            <button className="btn number" value='=' onClick={selectNumber} >
                 =
             </button>
         </div>
