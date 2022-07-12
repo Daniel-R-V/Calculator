@@ -8,8 +8,7 @@ const Pad = () => {
         setDisplay(e.target.value);
     };
 
-    const removeValue = (e) => {
-        e.preventDefault();
+    const removeValue = () => {
         let clear = 0;
         setDisplay(clear);
     } 
@@ -29,7 +28,7 @@ const Pad = () => {
             </button>
             </div>
             <div className="btn option">
-            <button className="text textOption" value='+/-' >
+            <button className="text textOption" value='+/-'>
                 +/-
             </button>
             </div>
