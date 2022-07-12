@@ -24,77 +24,77 @@ const Pad = () => {
 
         <div className="container">
             <div className="btn option">
-            <button className="text" value='AC' onClick={removeValue} >
+            <button className="text textOption" value='AC' onClick={removeValue} >
                 AC
             </button>
             </div>
             <div className="btn option">
-            <button className="text" value='+/-' >
+            <button className="text textOption" value='+/-' >
                 +/-
             </button>
             </div>
             <div className="btn option">
-            <button className="text" value='%'>
+            <button className="text textOption" value='%'>
                 %
             </button>
             </div>
             <div className="btn operator">
-            <button className="text" value='/'>
+            <button className="text textOperator" value='/'>
                 /
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='7' onClick={selectNumber} >
+            <button className="text textNumber" value='7' onClick={selectNumber} >
                 7
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='8' onClick={selectNumber} >
+            <button className="text textNumber" value='8' onClick={selectNumber} >
                 8
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='9' onClick={selectNumber} >
+            <button className="text textNumber" value='9' onClick={selectNumber} >
                 9
             </button>
             </div>
             <div className="btn operator">
-            <button className="text">
+            <button className="text textOperator">
                 x
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='4' onClick={selectNumber} >
+            <button className="text textNumber" value='4' onClick={selectNumber} >
                 4
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='5' onClick={selectNumber} >
+            <button className="text textNumber" value='5' onClick={selectNumber} >
                 5
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='6' onClick={selectNumber} >
+            <button className="text textNumber" value='6' onClick={selectNumber} >
                 6
             </button>
             </div>
             <div className="btn operator">
-            <button className="text" value='-'>
+            <button className="text textOperator" value='-'>
                 -
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='1' onClick={selectNumber} >
+            <button className="text textNumber" value='1' onClick={selectNumber} >
                 1
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='2' onClick={selectNumber} >
+            <button className="text textNumber" value='2' onClick={selectNumber} >
                 2
             </button> 
             </div>
             <div className="btn number">
-            <button className="text" value='3' onClick={selectNumber} >
+            <button className="text textNumber" value='3' onClick={selectNumber} >
                 3
             </button>
             </div>
@@ -104,17 +104,17 @@ const Pad = () => {
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='0' onClick={selectNumber} >
+            <button className="text textNumber" value='0' onClick={selectNumber} >
                 0
             </button>
             </div>
             <div className="btn number"> 
-            <button className="text" value=',' onClick={selectNumber} >
+            <button className="text textNumber" value=',' onClick={selectNumber} >
                 ,
             </button>
             </div>
             <div className="btn number">
-            <button className="text" value='='>
+            <button className="text textNumber" value='='>
                 =
             </button>
             </div>
@@ -123,20 +123,7 @@ const Pad = () => {
     </>    
     );
 
-
-    // function display() {
-    //     return (
-            
-    //     )
-    // }
-
-
-
 };
 
-
-// export const BtnPressed = () => {
-//     console.log('btn AC pressed!');
-// }
 
 export default Pad;

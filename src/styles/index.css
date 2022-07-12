@@ -52,12 +52,12 @@ body {
 
 .option {
     background-color: #1b2430;
-    color: #3ec70b;
+    
 }
 
 .operator {
     background-color: #1b2430;
-    color: #f55353;
+    
 }
 
 .operator:focus {
@@ -92,7 +92,7 @@ body {
 
 .casio-dani {
     font-family: "Orbitron", sans-serif;
-    color: #D5D8B5;
+    color: #E8AA42;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -129,7 +129,7 @@ body {
     outline: none;
     width: 3.5em;
     height: 3.5em;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: bold;
     border-radius: 40px;
     cursor: pointer;
@@ -156,9 +156,16 @@ body {
 }
 
 .text-plus:focus{
-    background-color: white;
-    color: #f55353c9;
+    background-color: #E8AA42;
+    color: white;
 
 }
 
+.textOption{
+    color: #3ec70b;
+}
+
+.textOperator{
+    color: #f55353;
+}
 
