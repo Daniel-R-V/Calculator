@@ -12,8 +12,7 @@ const Pad = () => {
         let clear = 0;
         setDisplay(clear);
     } 
-
-
+    
     return (
     <>
         <div className="casio-dani">CASIO</div>
