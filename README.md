@@ -9,4 +9,4 @@
 ⚡ Let's do a quick check out! This is a image from project.
 
 
-![calculator](src/images/calculator-result.jpg)
+![calculator](src/images/calculator-image.PNG)
