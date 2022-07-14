@@ -5,7 +5,6 @@ const Pad = () => {
     const [result,setResult] = useState("");
 
     const ops = ["/","*","+","-","."];
-    // const nums = ["1","2","3","4","5","6","7","8","9"];
 
     const updateCalc = (value) => {
         if((ops.includes(value) && calc === "") || (ops.includes(value) && ops.includes(calc.slice(-1)))){

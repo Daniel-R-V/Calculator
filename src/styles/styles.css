@@ -1,9 +1,9 @@
-.Board {
+.Pad {
     display: flex;
     justify-content: center;
 }
 
-.Board-section {
+.Pad-section {
     position: relative;
     margin-top: 1em;
     background-color: #2f5d62;

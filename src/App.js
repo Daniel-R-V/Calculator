@@ -1,11 +1,15 @@
 
-import Board from "./components/Board";
+import Pad from "./components/Pad";
 
 function App() {
 
     return (
         <div className="App">
-            <Board />
+            <div className="Pad">
+                <div className="Pad-section">
+                    <Pad />
+                </div>
+            </div>
         </div>
     );
 }
