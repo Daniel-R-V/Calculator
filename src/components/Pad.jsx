@@ -5,10 +5,10 @@ const Pad = () => {
     const [result,setResult] = useState("");
 
     const ops = ["/","*","+","-","."];
-    const nums = ["1","2","3","4","5","6","7","8","9"];
+    // const nums = ["1","2","3","4","5","6","7","8","9"];
 
     const updateCalc = (value) => {
-        if(ops.includes(value) && calc === "" || ops.includes(value) && ops.includes(calc.slice(-1))){
+        if((ops.includes(value) && calc === "") || (ops.includes(value) && ops.includes(calc.slice(-1)))){
             return;
         }
         setCalc(calc + value);
@@ -33,17 +33,6 @@ const Pad = () => {
     }
 
 
-//    const createDigits = () => {
-//         const digits = []
-
-//         for (let i=1; i< 10; i++){
-//             digits.push(
-//                 <button key={i}>{i}</button>
-//             )
-//         }
-//    }
-
-
     const removeValue = () => {
         setCalc("");
         setResult("");
@@ -66,12 +55,12 @@ const Pad = () => {
             </button>
             </div>
             <div className="btn option">
-            <button className="text textOption" onClick={del}>
+            <button className="text textOption del" onClick={del}>
                 DEL
             </button>
             </div>
             <div className="btn option">
-            <button className="text textOption">
+            <button className="text textOperator">
                 %
             </button>
             </div>
