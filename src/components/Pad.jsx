@@ -1,118 +1,157 @@
 import { useState } from "react";
 
 const Pad = () => {
-    const [display, setDisplay] = useState(0);
+    const [calc, setCalc] = useState("");
+    const [result,setResult] = useState("");
 
-    const selectNumber = (e) => {
-        e.preventDefault();
-        setDisplay(e.target.value);
-    };
+    const ops = ["/","*","+","-","."];
+    const nums = ["1","2","3","4","5","6","7","8","9"];
+
+    const updateCalc = (value) => {
+        if(ops.includes(value) && calc === "" || ops.includes(value) && ops.includes(calc.slice(-1))){
+            return;
+        }
+        setCalc(calc + value);
+
+        if(!ops.includes(value) ){
+            setResult(eval(calc + value).toString())
+        }
+    }
+
+    const calculate = () => {
+        setCalc(eval(calc).toString());
+    }
+
+
+    const del = () => {
+        if(calc === ""){
+            return;
+        }
+        const value = calc.slice(0, -1)
+
+        setCalc(value);
+    }
+
+
+//    const createDigits = () => {
+//         const digits = []
+
+//         for (let i=1; i< 10; i++){
+//             digits.push(
+//                 <button key={i}>{i}</button>
+//             )
+//         }
+//    }
+
 
     const removeValue = () => {
-        let clear = 0;
-        setDisplay(clear);
+        setCalc("");
+        setResult("");
     } 
     
     return (
     <>
         <div className="casio-dani">CASIO</div>
         <div className="screen">
-            <p className="text-screen">{display}</p>
+            <div className="text-screen">
+            {calc || "0"}{result ? <span className="eval">{result}</span> : ""}
+
+            </div>
         </div>
 
         <div className="container">
             <div className="btn option">
-            <button className="text textOption" value='AC' onClick={removeValue} >
+            <button className="text textOption" onClick={() => removeValue()}>
                 AC
             </button>
             </div>
             <div className="btn option">
-            <button className="text textOption" value='+/-'>
-                +/-
+            <button className="text textOption" onClick={del}>
+                DEL
             </button>
             </div>
             <div className="btn option">
-            <button className="text textOption" value='%'>
+            <button className="text textOption">
                 %
             </button>
             </div>
             <div className="btn operator">
-            <button className="text textOperator" value='/'>
+            <button className="text textOperator" onClick={() => updateCalc("/")}>
                 /
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='7' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("7")}>
                 7
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='8' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("8")} >
                 8
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='9' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("9")} >
                 9
             </button>
             </div>
             <div className="btn operator">
-            <button className="text textOperator">
+            <button className="text textOperator" onClick={() => updateCalc("*")}>
                 x
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='4' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("4")} >
                 4
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='5' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("5")} >
                 5
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='6' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("6")} >
                 6
             </button>
             </div>
             <div className="btn operator">
-            <button className="text textOperator" value='-'>
+            <button className="text textOperator" onClick={() => updateCalc("-")}>
                 -
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='1' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("1")} >
                 1
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='2' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("2")} >
                 2
             </button> 
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='3' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("3")} >
                 3
             </button>
             </div>
             <div className="btn operator btn-plus">
-            <button className="text-plus" value='+'>
+            <button className="text-plus" onClick={() => updateCalc("+")}>
                 +
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='0' onClick={selectNumber} >
+            <button className="text textNumber" onClick={() => updateCalc("0")}>
                 0
             </button>
             </div>
             <div className="btn number"> 
-            <button className="text textNumber" value=',' onClick={selectNumber} >
-                ,
+            <button className="text textNumber" onClick={() => updateCalc(".")}>
+                .
             </button>
             </div>
             <div className="btn number">
-            <button className="text textNumber" value='='>
+            <button className="text textNumber" onClick={calculate}>
                 =
             </button>
             </div>
