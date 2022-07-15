@@ -19,10 +19,9 @@
     gap: 0.5em;
 }
 
+
 .btn {
-    width: 7em;
-    height: 7em;
-    font-size: 1em;
+    background-color: #1b2430;
     font-weight: bold;
     border: 2px solid #3f3f3f;
     color: black;
@@ -36,26 +35,27 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-size: 2em;
+
 }
 
-.number {
-    background-color: #1b2430;
+
+
+.option{
+    color: #f55353;
+}
+
+.operator{
+    color: #3ec70b;
+}
+
+.number{
     color: white;
 }
 
-.option {
-    background-color: #1b2430;
-    
-}
-
-.operator {
-    background-color: #1b2430;
-    
-}
 
 .operator:focus {
-    background-color: white;
-    color: #f55353;
+    opacity: 0.6;
 }
 
 .screen {
@@ -80,11 +80,8 @@
     flex-direction: row-reverse;
 }
 
-.btn-size {
-    font-size: 2.3em;
-}
 
-.casio-dani {
+.casio {
     font-family: "Orbitron", sans-serif;
     color: #E8AA42;
     display: flex;
@@ -96,11 +93,9 @@
 .btn-plus {
     background-color: #f55353;
     color: white;
-    height: 14.5em;
+    height: 7.3em;
     border: 2px solid #3f3f3f;
 }
-
-
 
 .btn:hover {
     background-color: #1b243098;
@@ -112,59 +107,9 @@
 
 
 .btn-plus:focus{
-    background-color: white;
-    color: red;
+    background-color: #f55353;
+    opacity: 0.7;
 }
-
-.text{
-    border: none;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    width: 3.5em;
-    height: 3.5em;
-    font-size: 2.2em;
-    font-weight: bold;
-    border-radius: 40px;
-    cursor: pointer;
-}
-
-.text:hover{
-    background-color: transparent;
-    cursor: pointer;
-    color: white;
-}
-
-.text-plus{
-    border: none;
-    background-color: transparent;
-    color: white;
-    outline: none;
-    font-size: 2em;
-    font-weight: bold;
-    border-radius: 34px;
-    cursor: pointer;
-    height: 7.3em;
-    width: 3.5em;
-
-}
-
-.text-plus:focus{
-    background-color: #E8AA42;
-    color: white;
-
-}
-
-.textOperator{
-    color: #3ec70b;
-}
-
-
-
-.textOption{
-    color: #f55353;
-}
-
 
 
 .eval{
