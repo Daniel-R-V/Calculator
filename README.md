@@ -9,4 +9,18 @@
 ⚡ Let's do a quick check out! This is a image from project.
 
 
-![calculator](src/images/calculator-image.PNG)
+📱 SCREENSHOT 1️⃣
+
+![calculator](src/images/image-1.png)
+
+
+📱 SCREENSHOT 2️⃣
+
+![calculator](src/images/image-2.png)
+
+
+📱 SCREENSHOT 3️⃣ Result! ✔
+
+![calculator](src/images/image-3.png)
+
+
