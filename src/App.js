@@ -1,15 +1,12 @@
 
-import Pad from "./components/Pad";
+import { Calculator } from "./components/Calculator";
+
 
 function App() {
 
     return (
         <div className="App">
-            <div className="Pad">
-                <div className="Pad-section">
-                    <Pad />
-                </div>
-            </div>
+            <Calculator />
         </div>
     );
 }

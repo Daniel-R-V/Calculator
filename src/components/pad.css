@@ -1,0 +1,6 @@
+.pad {
+    display: grid;
+    grid-template-columns: 7em 7em 7em 7em;
+    grid-template-rows: 7em 7em 7em 7em 7em;
+    gap: 0.5em;
+}

@@ -1,0 +1,60 @@
+
+.btn {
+    background-color: #1b2430;
+    font-weight: bold;
+    border: 2px solid #3f3f3f;
+    color: black;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: 0.13s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+
+}
+
+.option{
+    color: #f55353;
+}
+
+.operator{
+    color: #3ec70b;
+}
+
+.number{
+    color: white;
+}
+
+
+.operator:focus {
+    opacity: 0.6;
+}
+
+.btn-plus {
+    background-color: #f55353;
+    color: white;
+    height: 7.3em;
+    border: 2px solid #3f3f3f;
+}
+
+.btn:hover {
+    background-color: #1b243098;
+}
+
+.btn-plus:hover {
+    background-color: #f55353c9;
+}
+
+
+.btn-plus:focus{
+    background-color: #f55353;
+    opacity: 0.7;
+}
+
+
+
